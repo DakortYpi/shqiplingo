@@ -4,7 +4,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { UserStats, ReviewCard } from '../types';
 import { soundManager } from '../utils/audio';
 
-export type TabType = 'lernen' | 'wiederholen' | 'ki-tutor' | 'profil';
+export type TabType = 'lernen' | 'wiederholen' | 'ki-tutor' | 'spiele' | 'profil';
 
 interface AppContextType {
   stats: UserStats;

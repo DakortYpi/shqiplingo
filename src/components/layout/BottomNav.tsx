@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BookOpen, Layers, Bot, User } from 'lucide-react';
+import { BookOpen, Layers, Bot, User, Gamepad2 } from 'lucide-react';
 import { useApp, TabType } from '../../context/AppContext';
 
 export function BottomNav() {
@@ -13,6 +13,7 @@ export function BottomNav() {
     { tab: 'lernen', label: 'Lernen', icon: BookOpen },
     { tab: 'wiederholen', label: 'Wiederholen', icon: Layers },
     { tab: 'ki-tutor', label: 'KI-Tutor', icon: Bot },
+    { tab: 'spiele', label: 'Spiele', icon: Gamepad2 },
     { tab: 'profil', label: 'Profil', icon: User },
   ];
 

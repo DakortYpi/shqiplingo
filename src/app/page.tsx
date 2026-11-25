@@ -11,6 +11,7 @@ import { TutorTab } from '../components/tutor/TutorTab';
 import { ProfileTab } from '../components/profile/ProfileTab';
 import { LessonModal } from '../components/learning/LessonModal';
 import { getLessonById } from '../data/lessons';
+import GameHub from '../components/games/GameHub';
 
 function AppContent() {
   const { activeTab, activeLessonId, closeLesson } = useApp();
@@ -27,6 +28,7 @@ function AppContent() {
         {activeTab === 'lernen' && <LearningPath />}
         {activeTab === 'wiederholen' && <ReviewTab />}
         {activeTab === 'ki-tutor' && <TutorTab />}
+        {activeTab === 'spiele' && <GameHub />}
         {activeTab === 'profil' && <ProfileTab />}
       </main>
 
