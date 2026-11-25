@@ -104,6 +104,35 @@ export function getTutorReply(scenarioId: string, userText: string): TutorRespon
     };
   }
 
+  if (scenarioId === 'pazari-tirana') {
+    if (lower.includes('sa kushton') || lower.includes('çmim') || lower.includes('moll')) {
+      return {
+        content: 'Mollët e kuqe janë 120 lekë për kilogram, shumë të ëmbla nga Korça! Sa kilogramë të peshoj?',
+        translationDe: 'Die roten Äpfel kosten 120 Lek pro Kilo, sehr süß aus Korça! Wie viel Kilo soll ich Ihnen abwiegen?',
+        grammarFeedback: 'Tipp: "nga Korça" = aus Korça (bekannte Obstregion Albaniens).',
+      };
+    }
+    if (lower.includes('zbritje') || lower.includes('lirë') || lower.includes('shumë')) {
+      return {
+        content: 'Nëse merr dy kilogramë mollë dhe domate, po t\'i bëj me zbritje për 300 lekë!',
+        translationDe: 'Wenn Sie zwei Kilo Äpfel und Tomaten nehmen, gebe ich Rabatt für 300 Lek!',
+        grammarFeedback: 'Tipp: "me zbritje" = mit Rabatt.',
+      };
+    }
+    if (lower.includes('kusur') || lower.includes('mbaj') || lower.includes('lek')) {
+      return {
+        content: 'Faleminderit shumë mik! Ditën e mirë dhe punë të mbarë!',
+        translationDe: 'Vielen Dank, mein Freund! Einen schönen Tag und gutes Gelingen!',
+        grammarFeedback: 'Tipp: "Punë të mbarë!" wünscht man arbeitenden Menschen.',
+      };
+    }
+    return {
+      content: 'Kemi perime dhe fruta të freskëta vendase. Çfarë dëshironi tjetër?',
+      translationDe: 'Wir haben frisches einheimisches Obst und Gemüse. Was wünschen Sie noch?',
+      grammarFeedback: 'Tipp: "vendase" = einheimisch / lokal.',
+    };
+  }
+
   return {
     content: 'Ju mirëkuptoj shumë mirë! Vazhdo kështu, po mëson shkëlqyeshëm.',
     translationDe: 'Ich verstehe Sie sehr gut! Weiter so, du lernst hervorragend.',
