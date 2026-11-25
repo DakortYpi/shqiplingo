@@ -10,8 +10,7 @@ export const tutorScenarios: TutorScenario[] = [
     avatar: '☕',
     description: 'Bestelle albanischen Bergtee oder einen Espresso im lebhaften Viertel Blloku.',
     systemPrompt: `Du bist Arbi, ein freundlicher albanischer Kellner in einem Café im Blloku-Viertel in Tirana.
-Du sprichst Standardalbanisch (Gjuha Standarde Shqipe).
-Antworte immer zuerst auf Albanisch (kurz und lebensnah, 1-2 Sätze) und gib darunter eine freundliche deutsche Übersetzung und ggf. eine sanfte Grammatik-Korrektur, wenn der Nutzer einen Fehler gemacht hat. Ermutige den Nutzer stets.`,
+Du sprichst Standardalbanisch (Gjuha Standarde Shqipe).`,
     initialMessage: {
       content: 'Mirëdita! Mirë se erdhët në kafe tonë. Çfarë dëshironi të pini sot?',
       translationDe: 'Guten Tag! Willkommen in unserem Café. Was möchten Sie heute trinken?',
@@ -31,8 +30,7 @@ Antworte immer zuerst auf Albanisch (kurz und lebensnah, 1-2 Sätze) und gib dar
     role: 'Reisefreundin (Elira)',
     avatar: '🎒',
     description: 'Lerne Elira kennen, tauscht euch über Herkunft und Albanisch-Lernen aus.',
-    systemPrompt: `Du bist Elira, eine herzliche albanische Studentin aus Shkodra.
-Du sprichst klares Standardalbanisch. Antworte in 1-2 einfachen Sätzen auf Albanisch und liefere eine deutsche Übersetzung mit einem lobenden kurzen Feedback.`,
+    systemPrompt: `Du bist Elira, eine herzliche albanische Studentin aus Shkodra.`,
     initialMessage: {
       content: 'Përshëndetje! Unë jam Elira nga Shkodra. Po ti, si quhesh dhe nga vjen?',
       translationDe: 'Hallo! Ich bin Elira aus Shkodra. Und du, wie heißt du und woher kommst du?',
@@ -52,8 +50,7 @@ Du sprichst klares Standardalbanisch. Antworte in 1-2 einfachen Sätzen auf Alba
     role: 'Händler (Genti)',
     avatar: '🏺',
     description: 'Kaufe Souvenirs und unterhalte dich über traditionelles Handwerk.',
-    systemPrompt: `Du bist Genti, ein stolzer Kunsthandwerker auf dem alten Basar in Kruja.
-Du antwortest auf Standardalbanisch in herzlichem Ton, erklärst kurz Handwerk oder Preise, und fügst eine deutsche Übersetzung bei.`,
+    systemPrompt: `Du bist Genti, ein stolzer Kunsthandwerker auf dem alten Basar in Kruja.`,
     initialMessage: {
       content: 'Mirëmbrëma mik! Shiko këto qilima dhe punime druri tradicionale. A kërkoni ndonjë suvenir?',
       translationDe: 'Guten Abend, mein Freund! Schau dir diese Teppiche und Holzarbeiten an. Suchen Sie ein Souvenir?',
@@ -63,6 +60,26 @@ Du antwortest auf Standardalbanisch in herzlichem Ton, erklärst kurz Handwerk o
       'A është bërë me dorë?',
       'Shumë i bukur! Po e marr.',
       'A pranoni pagesë me kartë?',
+    ],
+  },
+  {
+    id: 'history-kruja',
+    title: 'Burg Kruja & Skanderbeg',
+    subtitle: 'Historia në Kalanë e Krujës',
+    location: 'Krujë',
+    role: 'Historiker & Guide (Iliri)',
+    avatar: '🏰',
+    description: 'Erkunde die Festung von Skanderbeg und erfahre mehr über die Geschichte des Doppeladlers.',
+    systemPrompt: `Du bist Iliri, ein leidenschaftlicher albanischer Historiker auf der Burg Kruja.`,
+    initialMessage: {
+      content: 'Mirë se vini në Kalanë e Krujës! Këtu Skënderbeu udhëhoqi luftën për liri. Çfarë dëshironi të dini rreth historisë sonë?',
+      translationDe: 'Willkommen in der Festung von Kruja! Hier führte Skanderbeg den Freiheitskampf an. Was möchten Sie über unsere Geschichte wissen?',
+    },
+    suggestedPrompts: [
+      'Kush ishte Skënderbeu?',
+      'Pse flamuri ka një shqiponjë të zezë?',
+      'Çfarë do të thotë fjala "Besa"?',
+      'A mund të vizitojmë muzeun brenda kalasë?',
     ],
   },
 ];

@@ -75,6 +75,35 @@ export function getTutorReply(scenarioId: string, userText: string): TutorRespon
     };
   }
 
+  if (scenarioId === 'history-kruja') {
+    if (lower.includes('skënderbeu') || lower.includes('skanderbeg') || lower.includes('kush')) {
+      return {
+        content: 'Skënderbeu bashkoi princat shqiptarë në Besëlidhjen e Lezhës më 1444 dhe fitoi 25 beteja.',
+        translationDe: 'Skanderbeg vereinte die albanischen Fürsten 1444 im Bund von Lezha und gewann 25 Schlachten.',
+        grammarFeedback: 'Tipp: "fitoi" ist der Aorist (Vergangenheit) von "fitoj" (siegen).',
+      };
+    }
+    if (lower.includes('shqiponj') || lower.includes('flamur') || lower.includes('dy')) {
+      return {
+        content: 'Shqiponja e zezë me dy krena vjen nga stema e Kastriotëve dhe simbolizon lirinë dhe vigjilencën.',
+        translationDe: 'Der schwarze Doppeladler stammt aus dem Wappen der Kastrioti und symbolisiert Freiheit und Wachsamkeit.',
+        grammarFeedback: 'Tipp: "dy krena" bedeutet zwei Köpfe / Häupter.',
+      };
+    }
+    if (lower.includes('besa') || lower.includes('nder')) {
+      return {
+        content: 'Besa është kodi më i lartë i nderit. Shqiptari e mban fjalën e dhënë me çdo kusht!',
+        translationDe: 'Besa ist der höchste Ehrenkodex. Der Albaner hält sein gegebenes Wort um jeden Preis!',
+        grammarFeedback: 'Tipp: "fjala e dhënë" = das gegebene Wort.',
+      };
+    }
+    return {
+      content: 'Kalaja e Krujës ka mbijetuar rrethime madhore. Këtu historia ndihet në çdo gur!',
+      translationDe: 'Die Burg von Kruja überstand historische Belagerungen. Hier spürt man Geschichte in jedem Stein!',
+      grammarFeedback: 'Tipp: "në çdo gur" = in jedem Stein.',
+    };
+  }
+
   return {
     content: 'Ju mirëkuptoj shumë mirë! Vazhdo kështu, po mëson shkëlqyeshëm.',
     translationDe: 'Ich verstehe Sie sehr gut! Weiter so, du lernst hervorragend.',
